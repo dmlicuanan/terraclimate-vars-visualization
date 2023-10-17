@@ -1,4 +1,4 @@
-# working directory
+# set working directory to location of NetCDF datasets (.nc files)
 setwd("D:/Documents/Side projects/terraclimate/")
 
 # packages needed
@@ -6,12 +6,11 @@ library(sp)
 library(raster)
 library(ncdf4)
 
-# terraclimate variables 
+# set terraclimate variables of interest
 vars <- data.frame(name1 = c("aet", "ppt", "soil", "tmax", "tmin"))
 vars$name2 <- c("actual evapotranspiration", "precipitation", "soil moisture", "maximum temperature", "minimum temperature")
 
-# variable of interest {1:5}
-# for-loop does not work
+# set n to be the index of the variable of interest from {1:5}
 n <- 5
 
 # list of .nc files to be processed
@@ -20,7 +19,7 @@ files <- list.files(pattern = paste0(vars$name1[n],".*nc$"))
 # years of files
 yrs <- as.numeric(unlist(regmatches(files, gregexpr("[[:digit:]]+", files))))
 
-# empty list to store CV rasters
+# create empty list to store CV rasters
 stat <- list()
 # store min and max values
 # ext <- data.frame(i = 1:12, min = NA, max = NA)
