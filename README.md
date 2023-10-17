@@ -1,6 +1,6 @@
 # Variation of select TerraClimate variables from 2015-2021
 
-[TerraClimate](https://www.climatologylab.org/terraclimate.html) is a dataset of climate variables for terrestrial surfaces. I examined the variability of actual evapotranspiration, precipitation, soil moisture, maximum temperature, and minimum temperature in the Philippine from 2015-2021. The coefficient of variation or CV (i.e., standard deviation / mean) was used to measure variability, and maps were plotted per variable, per month as follows:
+[TerraClimate](https://www.climatologylab.org/terraclimate.html) is a dataset of climate variables for terrestrial surfaces. I examined the variability of actual evapotranspiration, precipitation, soil moisture, maximum temperature, and minimum temperature in the Philippines from 2015-2021. The coefficient of variation or CV (i.e., standard deviation / mean) was used to measure variability, and maps were plotted per variable, per month as follows:
 
 ![](images/paste-F898D1DB.png)
 
